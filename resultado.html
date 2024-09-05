@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado da Busca</title>
+</head>
+<body>
+    <h1>Estúdios de Tatuagem Próximos</h1>
+    <ul>
+        {% for estudio in estudios %}
+        <li>
+            <h2>{{ estudio.name }}</h2>
+            <p>Endereço: {{ estudio.vicinity }}</p>
+            <a href="https://www.google.com/maps/place/?q=place_id:{{ estudio.place_id }}">Ver no Mapa</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Fazer outra busca</a>
+</body>
+</html>

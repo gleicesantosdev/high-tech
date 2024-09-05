@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Estúdios de Tatuagem</title>
+</head>
+<body>
+    <h1>Encontre Estúdios de Tatuagem Próximos</h1>
+    <form action="/buscar" method="POST">
+        <label for="lat">Latitude:</label>
+        <input type="text" id="lat" name="lat" required>
+        
+        <label for="lon">Longitude:</label>
+        <input type="text" id="lon" name="lon" required>
+
+        <label for="estilo">Estilo de Tatuagem (opcional):</label>
+        <input type="text" id="estilo" name="estilo">
+
+        <button type="submit">Buscar</button>
+    </form>
+</body>
+</html>
